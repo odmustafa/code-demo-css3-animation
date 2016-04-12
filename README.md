@@ -10,6 +10,25 @@
 3. **css/styles.css:** style sheet for finished.html to see what the animations should look like at the end.
 4. **css/animate.css:** allows use of the Animate.css Library found at <http://daneden.me/animate>.
 
+# Code Demo Instructions
++ Open **start.html**, **startstyles.css**, and **copystyles.css**. 
++ In **start.html** follow all of the instructions in the commented blocks. The first set of instructions look like this:
+```css
+<!--###############[ (1) Link the Animate.css library ]####################   
+    ## 
+    ## To use the Animate.css library you must first link to the 
+    ## Animate.css stylesheet between the <head> tags. Uncomment 
+    ## [line 14] before continuing.
+    ##
+    ## Get your personal copy of Animate.css here: 
+    ## 
+    ## https://daneden.github.io/animate.css/
+    ##
+    ###########################################################################-->
+```
++ After **start.html** move on to **startstyles.css** and folow the commented instructions. It will ask you to copy/paste snippets of code found in **copystyles.css**.
+
+
 # copystyles.css
 CSS code snippets that can be copy/paste into **startstyles.css**.
 

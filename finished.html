@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS3 Animated Navbar Code Demo</title>
+    <meta name="author" content="Henrik Hiort and Omar Mustafa">
+    <meta name="description" content="CSS3 animation code demo for ATEC 4361.001 - Internet Studio II at UT Dallas (Spring 2016)."</meta>
+    <meta name="keywords" content="CSS3,HTML5,HTML,CSS,Animation,Transitions,Navbar,Code Demo">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"><!--style sheet, includes css for animation-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300" rel='stylesheet' type='text/css'><!--Google Fonts for Roboto font-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css"> <!--animate.css library for css3 animations-->
+  </head>
+  <body>
+    <!--###############[ (1) Link the Animate.css library ]####################   
+    ## 
+    ## To use the Animate.css library you must first link to the 
+    ## Animate.css stylesheet between the <head> tags. Uncomment 
+    ## [line 10] before continuing.
+    ##
+    ## Get your personal copy of Animate.css here: 
+    ## 
+    ## https://daneden.github.io/animate.css/
+    ##
+    ###########################################################################-->
+   
+    <!--############[ (2) Using the Animate.css library ]######################
+    ##
+    ## Use pre-made CSS3 animations found in the Animation.css library 
+    ## by adding class="animated [animation name]" to a <tag> you would 
+    ## like to animate. Replace [animation name] with one of the many  
+    ## animations that come with Animate.css. 
+    ## 
+    ## For this example we're using the animation "fadeInDown" for the 
+    ## header. This will cause the header to fade in as well as move down
+    ## from the top of the page. Your header tag will look something like this:
+    ##
+    ## <header class="animated fadeInDown">   [line 37] 
+    ## 
+    ###########################################################################-->
+
+    <header class="animated fadeInDown">
+      <h1>CSS3 Animation Navbar Code Demo</h1>
+      <p>Created by <a>Henrik Hiort</a> and <a>Omar Mustafa</a><br>
+        [ATEC 4361] Internet Studio II @ UT Dallas // Spring 2016</p>
+    </header>
+    
+    <!--##############[ (3) Making your own CSS3 Animations ]##################
+    ##
+    ## The animation for the nav bar will be made without the help of 
+    ## a library of pre-made animations. The navbar will have a class
+    ## of "navbar". Using only CSS, we will make the navbar expand from the 
+    ## center of the page after the header fades down from the top of the page.
+    ## 
+    ## Go over to the "styles.css" document in the css folder to continue this 
+    ## code demo.
+    ##
+    ##
+    ###########################################################################-->
+    
+    <div class="navbar">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div> 
+
+  </body>
+</html>

@@ -1,0 +1,102 @@
+/*###############[ (4) Timing for header animation ]#######################
+##
+## "animation-duration" -> how long it take the animation to complete.
+##
+## "animation-delay" -> animation starting time after page loads. 
+## 
+###########################################################################*/
+
+header {
+  -webkit-animation-duration: 0.5s; /* Header animation will take 0.5s to complete. */
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0.5s; /* Header animation will begin 0.5s after the page loads */
+          animation-delay: 0.5s;
+}
+
+/*###############[ (5a) Navbar animation and timing ]####################
+##
+## "animation: [name of animation] [speed curve of animation] [animation-duration]"
+##      -> [name of animation] must match "@keyframes [name of animation]" below.
+##
+## "animation-iteration-count" -> number of times animation will loop.
+##
+## "animation-fill-mode" -> "forwards" keeps the animation from going back to the first
+##       keyframe after it has gone through total iterations.
+##
+###########################################################################*/
+
+.navbar ul{
+  -webkit-animation: navstretch ease-out 1s; /* navbar animation linked to animation @keyframes named navstretch (below) */
+  animation: navstretch ease-out 1s; 
+  -webkit-animation-delay: 1.3s; /* Delay start of animation until header animation is complete */
+  animation-delay: 1.3s; 
+  -webkit-animation-iteration-count: 1; /* navstretch animation plays through 1 time */
+  animation-iteration-count: 1; 
+  -webkit-animation-fill-mode: forwards; /* Keeps animation from resetting to how it was at the start */
+  animation-fill-mode: forwards; 
+}
+
+/*###############[ (5b) Navbar animation @keyframes ]#####################
+##
+## "@keyframes [name of animation]" -> must match [name of animation] from above.
+##    0% is the beginning of the animation and 100% is the end of the animation.
+##
+###########################################################################*/
+@keyframes navstretch {
+  /*****************************************************/
+  /****   Animation for navbar begins with the     *****/ 
+  /****   opacity, visibility, and scaleX set      *****/ 
+  /****   to hide the element, make it             *****/ 
+  /****   unclickable, and shrinks the width to 0. *****/
+  /*****************************************************/
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+  }
+  /*****************************************************/
+  /****   2% into the animation the opacity is set  ****/ 
+  /****   to 1 and visibility set to visible to     ****/ 
+  /****   unhide the navbar element and make it     ****/ 
+  /****   clickable. Since scaleX is still set to 0 ****/ 
+  /****   the navbar won' appear on the page yet.   ****/
+  /*****************************************************/
+  2% {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(0);
+  }
+  /*****************************************************/
+  /****   At 100% into the animation (the end)      ****/
+  /****   scaleX is finally set to 1. This means    ****/ 
+  /****   that, from 2% into the animation to the   ****/
+  /****   end of the animation, the width of the    ****/
+  /****   navbar scaled from 0 to 1 (0% to 100%)    ****/
+  /*****************************************************/
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1);
+  }
+}
+  /*****************************************************/
+  /****  -webkit version of the above @keyframs     ****/
+  /*****************************************************/ 
+
+@-webkit-keyframes navstretch {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+  }
+  2% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+  }
+}

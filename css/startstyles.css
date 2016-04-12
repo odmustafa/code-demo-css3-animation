@@ -1,0 +1,128 @@
+/*General stylings and whatnot*/
+html {
+  font-family: 'Roboto', sans-serif; /*Using Google Fonts Roboto*/
+  font-size: 15px;
+  width: 650px;
+  margin: 0 auto;
+}
+
+/*Basic header styling*/
+header {
+  text-align: right;
+  width: 100%;
+  padding-top: 50px;
+  background-color: white;
+  border: 1px solid #333;
+}
+h1, p {
+  text-align: right;
+}
+h1{
+  font-size: 2rem;
+  padding: 0;
+  margin-bottom: 0; 
+}
+p {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 15px; 
+}
+p a {
+  color: #4CAF50;
+  margin-left: 2px;
+  margin-right: 2px;
+} 
+
+/*Basic navbar styling*/
+.navbar {
+  text-align: center;
+  padding-top: 2.5px;
+}
+
+ul {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #eee;
+  width: 100%;
+  border: 1px solid #333;
+
+  /**********Animation CSS**************
+  ##
+  ## Hides the visibilty of the navbar 
+  ## when the page loads. While hidden, 
+  ## the area where navbar buttons appear 
+  ## will not be clickable. Navbar will 
+  ## become visible and clickable after 
+  ## the header animation is complete and 
+  ## the navbar animation begins.
+  ## Remove the comments on [ line 66 & 67 ]
+  ##
+  ########################################*/
+
+  /*** remove these comments *** 
+  visibility: hidden; 
+  opacity: 0; 
+  *** remove these comments ***/
+
+  /*##########################################
+  ##
+  ## Visibility of the navbar is set to hidden
+  ## so that the nav buttons won't be clickable
+  ## until after the navbar animation is started
+  ## running.
+  ## 
+  ## Opacity of navbar is set to 0 so the navbar 
+  ## is invisible when the page loads.
+  ## 
+  ****************************************/
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+}
+
+.active, .active:hover {
+  background-color: #4CAF50;
+}
+
+/************************************/
+/******** Animation CSS *************/
+/******** From Below This Point******/ 
+/************************************/
+/******** copy/paste from ***********/
+/******** [ copystyles.css ] ********/
+/******** to get the animations *****/
+/******** work properly. ************/
+/************************************/
+
+/************************************/
+/* BEFORE YOU BEGIN, DID YOU DO THE PART 
+/* STARTING ON LINE 52 FIRST? 
+/************************************/
+
+/*###############[ (4) Timing for header animation ]#######################*/
+
+/* copy/paste [lines 9-14] from [copystyles.css] here */
+
+/*###############[ (5a) Navbar animation and timing ]######################*/
+
+/* copy/paste [lines 29-38] from [copystyles.css] here */
+
+/*###############[ (5b) Navbar animation @keyframes ]#####################*/
+
+/* copy/paste [lines 46-103] from [copystyles.css] here */

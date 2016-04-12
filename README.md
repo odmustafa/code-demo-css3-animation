@@ -11,6 +11,9 @@
 4. **css/animate.css:** allows use of the Animate.css Library found at <http://daneden.me/animate>.
 
 # copystyles.css
+CSS code snippets that can be copy/paste into **startstyles.css**.
+
+(4) Timing for header animation 
 ```css
 header {
   -webkit-animation-duration: 0.5s; /* Header animation will take 0.5s to complete. */
@@ -19,6 +22,7 @@ header {
           animation-delay: 0.5s;
 }
 ```
+(5a) Navbar animation and timing
 ```css
 .navbar ul{
   -webkit-animation: navstretch ease-out 1s; /* navbar animation linked to animation @keyframes named navstretch (below) */
@@ -31,6 +35,7 @@ header {
   animation-fill-mode: forwards; 
 }
 ```
+(5b) Navbar animation @keyframes
 ```css
 @keyframes navstretch {
   0% {

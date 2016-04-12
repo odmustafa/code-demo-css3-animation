@@ -1,14 +1,15 @@
-# code-demo-css3-animation
+# Code Demo - CSS3 Animation
 
-# HTML Files
+## Include Files
+##### HTML Files (2 files)
 1. **start.html:** basic html code for header and navbar, instructions in the comments throughout the document.
-2. **finished.html:** animated header and navbar. this is what it should be like after completing the code demo.
+2. **finished.html:** Animated header and navbar. This is what it should be like after completing the code demo.
 
-# CSS Files
-1. **css/startstyles.css:** basic css for header and navbar style, animation code needed from 'copystyles.css'
-2. **css/copystyles.css:** animation code snippets that will add animation, copy/paste into 'startstyles.css'.
-3. **css/styles.css:** style sheet for finished.html to see what the animations should look like at the end.
-4. **css/animate.css:** allows use of the Animate.css Library found at <http://daneden.me/animate>.
+##### CSS Files (4 files)
+1. **css/startstyles.css:** Basic css for header and navbar style, animation code needed from 'copystyles.css'.
+2. **css/copystyles.css:** Animation code snippets that will add animation, copy/paste into 'startstyles.css'.
+3. **css/styles.css:** Style sheet for finished.html to see what the animations should look like at the end.
+4. **css/animate.css:** Allows use of the Animate.css Library found at <http://daneden.me/animate>.
 
 # Code Demo Instructions
 + Open **start.html**, **startstyles.css**, and **copystyles.css**. 

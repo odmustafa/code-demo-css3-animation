@@ -1,7 +1,10 @@
 # Code Demo - CSS3 Animation
 Henrik Hiort and Omar Mustafa
+
 (ATEC 4361) Internet Studio II 
+
 University of Texas at Dallas - Spring 2016
+
 
 **Preview:** http://css3motion.omarmustafa.net/codedemo/finished.html
 

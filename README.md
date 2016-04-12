@@ -28,6 +28,7 @@
     ###########################################################################-->
 ```
 + After **start.html** move on to **startstyles.css** and folow the commented instructions. It will ask you to copy/paste snippets of code found in **copystyles.css**.
++ Use **finished.html** to compare your work to what the completed demo should look like. 
 
 
 # copystyles.css

@@ -5,8 +5,9 @@ Henrik Hiort and Omar Mustafa
 
 University of Texas at Dallas - Spring 2016
 
-
 **Preview:** http://css3motion.omarmustafa.net/codedemo/finished.html
+
+**Start Demo In CodePen:** http://codepen.io/odmustafa/pen/redBXJ
 
 ## Include Files
 ##### HTML Files (2 files)

@@ -1,0 +1,296 @@
+/*General stylings and whatnot*/
+html {
+  font-family: 'Roboto', sans-serif; /*Using Google Fonts Roboto*/
+  font-size: 15px;
+  width: 650px;
+  margin: 0 auto;
+}
+
+.modal-content {
+  color: white;
+  text-align: center;
+}
+#btn-close-modal{
+  font-size: 30px;
+}
+#btn-close-modal:hover{
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+#demo02,#demo01,#demo03 {
+    display:inline-block;
+    width:150px;
+    height:150px;
+    line-height:125px;
+    border-radius: 75%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35%;
+    margin-bottom: 50%;
+}
+#demo02:hover,#demo01:hover,#demo03:hover{
+  width: 160px;
+  height: 160px;
+  transition: width 0.2s ease-in;
+  transition: height 0.2s ease-in;
+  line-height: 150px;
+} 
+#demo02{
+  background: #3498db;
+}
+#demo01{
+  background: #E91E63;
+}
+#demo03{
+  background: #FF5722;
+}
+/* Nav Bar animation */
+#nav {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+#nav:before, span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  top: 75%;
+  margin-top: -1px;
+  background: #FFFFFF;
+}
+
+#nav:hover:after {
+  background: #FFFFFF;
+  width: 100%;
+  -webkit-transition: width 0.5s ease-out;
+  transition: width 0.5s ease-out;
+  left: -2.5px
+}
+
+/* end nav bar animation /*
+
+
+/*Basic header styling*/
+header {
+  text-align: right;
+  width: 100%;
+  padding-top: 50px;
+  background-color: white;
+}
+h1, p {
+  text-align: right;
+}
+h1{
+  font-size: 2rem;
+  padding: 0;
+  margin-bottom: 0; 
+}
+p {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 15px; 
+}
+p a {
+  color: #4CAF50;
+  margin-left: 2px;
+  margin-right: 2px;
+} 
+
+/*Basic navbar styling*/
+.navbar {
+  text-align: center;
+  padding-top: 35%;
+}
+
+ul {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  /**********Animation CSS***********/ 
+  visibility: hidden; /* Hides the visibilty of the navbar when the page loads. While hidden, the area where navbar buttons appear will not be clickable. Navbar will become visible and clickable after the header animation is complete and the navbar animation begins.*/
+  opacity: 0; /* Opacity of navbar is set to 0 so the navbar is invisible when the page loads. */
+  /**********Animation CSS***********/ 
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+/* Ball Animation & CSS */
+.ball{
+  /* centering ball in div*/
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  height: 50px;
+  
+  /* Start ball animation */
+  animation-name: ball-bounce;
+  /* sets speed of curve */
+  animation-timing-function: linear;
+  /* sets the animation to run the whole website */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* sets speed of animation */
+  animation-duration: 1.25s;
+  
+}
+/* actual ball */
+.ball span{   
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  display: block;
+  /* begin animation of squash and squish */
+  animation-name: ball-stretch;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.25s;
+}
+/* movement of the ball */
+@keyframes ball-bounce {
+  0% { 
+    transform: translateY(1000%);
+    animation-timing-function: ease-out;
+  }
+  85% { 
+    transform: translateY(0%);
+    animation-timing-function: ease-in;
+  }
+  100%{ 
+    transform: translateY(0%); 
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes ball-stretch {
+  0% { 
+    height: 10px;
+    width: 80px;
+  5% {
+    height: 20px;
+    width: 60;
+  }  
+  }
+  10% { 
+    height: 90px;
+    width: 50px;
+  }
+  15% { 
+    height: 90px;
+    width: 50px;
+  }
+  25%{
+    height: 100px;
+    width: 50px;
+  }
+  100%{ 
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/*** End ball Animation **/
+
+/**********************************/
+/**********Animation CSS***********/
+/*******From Below This Point******/ 
+/**********************************/
+
+header {
+  -webkit-animation-duration: 0.5s; /* Header animation will take 0.5s to complete. */
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0.5s; /* Header animation will begin 0.5s after the page loads */
+          animation-delay: 0.5s;
+}
+
+.navbar ul{
+  -webkit-animation: navstretch ease-out 1s; /* navbar animation linked to animation @keyframes named navstretch (below) */
+  animation: navstretch ease-out 1s; 
+  -webkit-animation-delay: 1.3s; /* Delay start of animation until header animation is complete */
+  animation-delay: 1.3s; 
+  -webkit-animation-iteration-count: 1; /* navstretch animation plays through 1 time */
+  animation-iteration-count: 1; 
+  -webkit-animation-fill-mode: forwards; /* Keeps animation from resetting to how it was at the start */
+  animation-fill-mode: forwards; 
+}
+
+@keyframes navstretch {
+  /*****************************************************/
+  /****   Animation for navbar begins with the     *****/ 
+  /****   opacity, visibility, and scaleX set      *****/ 
+  /****   to hide the element, make it             *****/ 
+  /****   unclickable, and shrinks the width to 0. *****/
+  /*****************************************************/
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+  }
+  /*****************************************************/
+  /****   2% into the animation the opacity is set  ****/ 
+  /****   to 1 and visibility set to visible to     ****/ 
+  /****   unhide the navbar element and make it     ****/ 
+  /****   clickable. Since scaleX is still set to 0 ****/ 
+  /****   the navbar won' appear on the page yet.   ****/
+  /*****************************************************/
+  2% {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(0);
+  }
+  /*****************************************************/
+  /****   At 100% into the animation (the end)      ****/
+  /****   scaleX is finally set to 1. This means    ****/ 
+  /****   that, from 2% into the animation to the   ****/
+  /****   end of the animation, the width of the    ****/
+  /****   navbar scaled from 0 to 1 (0% to 100%)    ****/
+  /*****************************************************/
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes navstretch {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+  }
+  2% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+  }
+}
